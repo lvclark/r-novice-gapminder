@@ -40,8 +40,8 @@ x
 
 
 ~~~
-  a   b   c   d   e 
-5.4 6.2 7.1 4.8 7.5 
+  a   b   c   d   e
+5.4 6.2 7.1 4.8 7.5
 ~~~
 {: .output}
 
@@ -67,8 +67,8 @@ x[1]
 
 
 ~~~
-  a 
-5.4 
+  a
+5.4
 ~~~
 {: .output}
 
@@ -81,8 +81,8 @@ x[4]
 
 
 ~~~
-  d 
-4.8 
+  d
+4.8
 ~~~
 {: .output}
 
@@ -100,8 +100,8 @@ x[c(1, 3)]
 
 
 ~~~
-  a   c 
-5.4 7.1 
+  a   c
+5.4 7.1
 ~~~
 {: .output}
 
@@ -116,8 +116,8 @@ x[1:4]
 
 
 ~~~
-  a   b   c   d 
-5.4 6.2 7.1 4.8 
+  a   b   c   d
+5.4 6.2 7.1 4.8
 ~~~
 {: .output}
 
@@ -161,8 +161,8 @@ x[c(1,1,3)]
 
 
 ~~~
-  a   a   c 
-5.4 5.4 7.1 
+  a   a   c
+5.4 5.4 7.1
 ~~~
 {: .output}
 
@@ -176,8 +176,8 @@ x[6]
 
 
 ~~~
-<NA> 
-  NA 
+<NA>
+  NA
 ~~~
 {: .output}
 
@@ -218,8 +218,8 @@ x[-2]
 
 
 ~~~
-  a   c   d   e 
-5.4 7.1 4.8 7.5 
+  a   c   d   e
+5.4 7.1 4.8 7.5
 ~~~
 {: .output}
 
@@ -234,8 +234,8 @@ x[c(-1, -5)]  # or x[-c(1,5)]
 
 
 ~~~
-  b   c   d 
-6.2 7.1 4.8 
+  b   c   d
+6.2 7.1 4.8
 ~~~
 {: .output}
 
@@ -245,7 +245,7 @@ x[c(-1, -5)]  # or x[-c(1,5)]
 > slices of a vector. It's natural to try to negate a
 > sequence like so:
 >
-> 
+>
 > ~~~
 > x[-1:3]
 > ~~~
@@ -253,7 +253,7 @@ x[c(-1, -5)]  # or x[-c(1,5)]
 >
 > This gives a somewhat cryptic error:
 >
-> 
+>
 > ~~~
 > Error in x[-1:3]: only 0's may be mixed with negative subscripts
 > ~~~
@@ -266,17 +266,17 @@ x[c(-1, -5)]  # or x[-c(1,5)]
 > The correct solution is to wrap that function call in brackets, so
 > that the `-` operator applies to the result:
 >
-> 
+>
 > ~~~
 > x[-(1:3)]
 > ~~~
 > {: .language-r}
-> 
-> 
-> 
+>
+>
+>
 > ~~~
->   d   e 
-> 4.8 7.5 
+>   d   e
+> 4.8 7.5
 > ~~~
 > {: .output}
 {: .callout}
@@ -295,8 +295,8 @@ x
 
 
 ~~~
-  a   b   c   e 
-5.4 6.2 7.1 7.5 
+  a   b   c   e
+5.4 6.2 7.1 7.5
 ~~~
 {: .output}
 
@@ -304,28 +304,28 @@ x
 >
 > Given the following code:
 >
-> 
+>
 > ~~~
 > x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
 > names(x) <- c('a', 'b', 'c', 'd', 'e')
 > print(x)
 > ~~~
 > {: .language-r}
-> 
-> 
-> 
+>
+>
+>
 > ~~~
->   a   b   c   d   e 
-> 5.4 6.2 7.1 4.8 7.5 
+>   a   b   c   d   e
+> 5.4 6.2 7.1 4.8 7.5
 > ~~~
 > {: .output}
 >
 > Come up with at least 2 different commands that will produce the following output:
 >
-> 
+>
 > ~~~
->   b   c   d 
-> 6.2 7.1 4.8 
+>   b   c   d
+> 6.2 7.1 4.8
 > ~~~
 > {: .output}
 >
@@ -333,43 +333,43 @@ x
 >
 > > ## Solution to challenge 1
 > >
-> > 
+> >
 > > ~~~
 > > x[2:4]
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
-> >   b   c   d 
-> > 6.2 7.1 4.8 
+> >   b   c   d
+> > 6.2 7.1 4.8
 > > ~~~
 > > {: .output}
-> > 
+> >
 > > ~~~
 > > x[-c(1,5)]
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
-> >   b   c   d 
-> > 6.2 7.1 4.8 
+> >   b   c   d
+> > 6.2 7.1 4.8
 > > ~~~
 > > {: .output}
-> > 
+> >
 > > ~~~
 > > x[c(2,3,4)]
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
-> >   b   c   d 
-> > 6.2 7.1 4.8 
+> >   b   c   d
+> > 6.2 7.1 4.8
 > > ~~~
 > > {: .output}
 > >
@@ -390,8 +390,8 @@ x[c("a", "c")]
 
 
 ~~~
-  a   c 
-5.4 7.1 
+  a   c
+5.4 7.1
 ~~~
 {: .output}
 
@@ -412,8 +412,8 @@ x[c(FALSE, FALSE, TRUE, FALSE, TRUE)]
 
 
 ~~~
-  c   e 
-7.1 7.5 
+  c   e
+7.1 7.5
 ~~~
 {: .output}
 
@@ -430,8 +430,8 @@ x[x > 7]
 
 
 ~~~
-  c   e 
-7.1 7.5 
+  c   e
+7.1 7.5
 ~~~
 {: .output}
 
@@ -451,8 +451,8 @@ x[names(x) == "a"]
 
 
 ~~~
-  a 
-5.4 
+  a
+5.4
 ~~~
 {: .output}
 
@@ -489,19 +489,19 @@ x[names(x) == "a"]
 >
 > Given the following code:
 >
-> 
+>
 > ~~~
 > x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
 > names(x) <- c('a', 'b', 'c', 'd', 'e')
 > print(x)
 > ~~~
 > {: .language-r}
-> 
-> 
-> 
+>
+>
+>
 > ~~~
->   a   b   c   d   e 
-> 5.4 6.2 7.1 4.8 7.5 
+>   a   b   c   d   e
+> 5.4 6.2 7.1 4.8 7.5
 > ~~~
 > {: .output}
 >
@@ -509,18 +509,18 @@ x[names(x) == "a"]
 >
 > > ## Solution to challenge 2
 > >
-> > 
+> >
 > > ~~~
 > > x_subset <- x[x<7 & x>4]
 > > print(x_subset)
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
-> >   a   b   d 
-> > 5.4 6.2 4.8 
+> >   a   b   d
+> > 5.4 6.2 4.8
 > > ~~~
 > > {: .output}
 > {: .solution}
@@ -559,8 +559,8 @@ x[names(x) == "a"]
 >
 >
 >~~~
->a a a 
->1 2 3 
+>a a a
+>1 2 3
 >~~~
 >{: .output}
 >
@@ -574,8 +574,8 @@ x[names(x) == "a"]
 >
 >
 >~~~
->a 
->1 
+>a
+>1
 >~~~
 >{: .output}
 >
@@ -589,8 +589,8 @@ x[names(x) == "a"]
 >
 >
 >~~~
->a a a 
->1 2 3 
+>a a a
+>1 2 3
 >~~~
 >{: .output}
 {: .callout}
@@ -631,8 +631,8 @@ x[names(x) != "a"]
 
 
 ~~~
-  b   c   d   e 
-6.2 7.1 4.8 7.5 
+  b   c   d   e
+6.2 7.1 4.8 7.5
 ~~~
 {: .output}
 
@@ -655,8 +655,8 @@ of shorter object length
 
 
 ~~~
-  b   c   d   e 
-6.2 7.1 4.8 7.5 
+  b   c   d   e
+6.2 7.1 4.8 7.5
 ~~~
 {: .output}
 
@@ -715,8 +715,8 @@ x[! names(x) %in% c("a","c") ]
 
 
 ~~~
-  b   d   e 
-6.2 4.8 7.5 
+  b   d   e
+6.2 4.8 7.5
 ~~~
 {: .output}
 
@@ -730,7 +730,7 @@ x[! names(x) %in% c("a","c") ]
 > is `TRUE` for all of the countries in southeast Asia and `FALSE` otherwise?
 >
 > Suppose you have these data:
-> 
+>
 > ~~~
 > seAsia <- c("Myanmar","Thailand","Cambodia","Vietnam","Laos")
 > ## read in the gapminder data that we downloaded in episode 2
@@ -746,7 +746,7 @@ x[! names(x) %in% c("a","c") ]
 > a clunky way (using the logical operators `==` and `|`); and
 > an elegant way (using `%in%`). See whether you can come up with all three
 > and explain how they (don't) work.
-> 
+>
 > > ## Solution to challenge 3
 > >
 > > - The **wrong** way to do this problem is `countries==seAsia`. This
@@ -754,7 +754,7 @@ x[! names(x) %in% c("a","c") ]
 > > `FALSE` values), because none of the recycled values of `seAsia` happen
 > > to line up correctly with matching values in `country`.
 > > - The **clunky** (but technically correct) way to do this problem is
-> > 
+> >
 > > ~~~
 > >  (countries=="Myanmar" | countries=="Thailand" |
 > >  countries=="Cambodia" | countries == "Vietnam" | countries=="Laos")
@@ -1013,15 +1013,15 @@ instead of their row and column indices.
 >
 > Given the following code:
 >
-> 
+>
 > ~~~
 > m <- matrix(1:18, nrow=3, ncol=6)
 > print(m)
 > ~~~
 > {: .language-r}
-> 
-> 
-> 
+>
+>
+>
 > ~~~
 >      [,1] [,2] [,3] [,4] [,5] [,6]
 > [1,]    1    4    7   10   13   16
@@ -1182,7 +1182,7 @@ xlist$data
 > ## Challenge 5
 > Given the following list:
 >
-> 
+>
 > ~~~
 > xlist <- list(a = "Software Carpentry", b = 1:10, data = head(iris))
 > ~~~
@@ -1193,38 +1193,38 @@ xlist$data
 >
 > > ## Solution to challenge 5
 > >
-> > 
+> >
 > > ~~~
 > > xlist$b[2]
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
 > > [1] 2
 > > ~~~
 > > {: .output}
-> > 
+> >
 > > ~~~
 > > xlist[[2]][2]
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
 > > [1] 2
 > > ~~~
 > > {: .output}
-> > 
+> >
 > > ~~~
 > > xlist[["b"]][2]
 > > ~~~
 > > {: .language-r}
-> > 
-> > 
-> > 
+> >
+> >
+> >
 > > ~~~
 > > [1] 2
 > > ~~~
@@ -1236,7 +1236,7 @@ xlist$data
 > ## Challenge 6
 > Given a linear model:
 >
-> 
+>
 > ~~~
 > mod <- aov(pop ~ lifeExp, data=gapminder)
 > ~~~
@@ -1246,12 +1246,12 @@ xlist$data
 >
 > > ## Solution to challenge 6
 > >
-> > 
+> >
 > > ~~~
 > > attributes(mod) ## `df.residual` is one of the names of `mod`
 > > ~~~
 > > {: .language-r}
-> > 
+> >
 > > ~~~
 > > mod$df.residual
 > > ~~~
@@ -1434,7 +1434,6 @@ be changed with the third argument, `drop = FALSE`).
 > >
 > > 4. Extract the first row, and the fourth and fifth columns
 > >   (`continent` and `lifeExp`).
-
 > >
 > >    
 > >    ~~~
@@ -1468,9 +1467,9 @@ be changed with the third argument, `drop = FALSE`).
 > >
 > > 1.  `gapminder` is a data.frame so needs to be subsetted on two dimensions. `gapminder[1:20, ]` subsets the data to give the first 20 rows and all columns.
 > >
-> > 2. 
+> > 2.
 > >
-> > 
+> >
 > > ~~~
 > > gapminder_small <- gapminder[c(1:9, 19:23),]
 > > ~~~
